@@ -3,8 +3,8 @@
 ### What is `ucspi-ssl sslserver`?
 `sslserver` is part of the [ucspi-ssl](https://www.fehcom.de/ipnet/ucspi-ssl.html) collection of tools used for building client-server applications that connect over SSL/TLS.
 It was developed as an SSL/TLS analogue to Daniel Bernstein's [ucspi-tcp tcpserver](https://cr.yp.to/ucspi-tcp.html) program, 
-and has been developed and maintained over the years by [William Baxter](https://github.com/SuperScript/ucspi-ssl), [Scott Gifford](https://github.com/scottgifford/ucspi-ssl), and [Erwin Hoffman](https://www.fehcom.de/ipnet/ucspi-ssl.html).
-The project's current home is at Erwin Hoffman's site at [https://www.fehcom.de/ipnet/ucspi-ssl.html](https://www.fehcom.de/ipnet/ucspi-ssl.html).
+and has been developed and maintained over the years by [William Baxter](https://github.com/SuperScript/ucspi-ssl), [Scott Gifford](https://github.com/scottgifford/ucspi-ssl), and [Erwin Hoffmann](https://www.fehcom.de/ipnet/ucspi-ssl.html).
+The project's current home is at Erwin Hoffmann's site at [https://www.fehcom.de/ipnet/ucspi-ssl.html](https://www.fehcom.de/ipnet/ucspi-ssl.html).
 
 `sslserver` listens for incoming TCP connections on a designated port.  Upon receiving an incoming connection from a client, `sslserver` negotiates a SSL/TLS session with the client, then spawns a child program that interacts with the client.  Requests sent from the client are piped as input to the child program through STDIN, and output written by the child program to STDOUT are piped as a response back to the client.  `sslserver` is capable of handling multiple simultaneous connections, as it will spawn a separate instance of the child program for each incoming connection from a client.
 
@@ -192,7 +192,7 @@ Test.  Start sslserver:
 Now, point your web browser to https://example.domain.tld/.  If everything worked as it should, you should see a dynamically generated web page produced by index.py!
 
 ### Thank You
-Special thanks to Erwin Hoffman for his advice on how to get sslserver to see the dh param file.
+Special thanks to Erwin Hoffmann for his advice on how to get sslserver to see the dh param file.
 
 ### Questions?
 [Contact MTI](https://www.meixler-tech.com/contact.php).
